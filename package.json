@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-starter-github-pages-mdx",
+  "version": "0.0.1",
+  "description": "A Gatsby starter kit for building a Markdown/React site and deploying it to GitHub Pages using a GitHub Action.",
+  "license": "MIT",
+  "author": "John Dunning (https://github.com/fwextensions)",
+  "repository": "github:fwextensions/gatsby-starter-github-pages-mdx",
+  "homepage": "https://github.com/fwextensions/gatsby-starter-github-pages-mdx",
+  "bugs": "https://github.com/fwextensions/gatsby-starter-github-pages-mdx/issues",
+  "keywords": [
+    "gatsby",
+    "gatsby starter",
+		"markdown",
+		"mdx",
+		"react",
+		"github pages"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build --prefix-paths",
+    "serve": "gatsby serve --prefix-paths",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^4.14.0",
+    "gatsby-plugin-mdx": "^3.14.0",
+    "gatsby-plugin-react-helmet": "^5.14.0",
+    "gatsby-source-filesystem": "^4.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
+  }
+}

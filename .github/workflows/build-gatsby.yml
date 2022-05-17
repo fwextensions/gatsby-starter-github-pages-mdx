@@ -7,10 +7,9 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-
-    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       # Cancel any in-progress workflows when this action starts, which mostly
@@ -44,7 +43,7 @@ jobs:
       - name: Build Gatsby
         run: npm run build
 
-      - name: Publish to GitHub Pages
+      - name: Push to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:

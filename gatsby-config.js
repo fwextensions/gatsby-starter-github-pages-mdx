@@ -4,7 +4,7 @@ module.exports = {
 		titleTemplate: "%s · My Site",
 		description: "A Gatsby starter kit for building a Markdown/React site and deploying it to GitHub Pages using a GitHub Action."
 	},
-	pathPrefix: "/gatsby-starter",
+	pathPrefix: "/gatsby-starter-github-pages-mdx",
 	plugins: [
 		"gatsby-plugin-react-helmet",
 		{
